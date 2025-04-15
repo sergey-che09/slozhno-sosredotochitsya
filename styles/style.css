@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--main-font, "IBM Plex mono", Arial, sans-serif);
+  font-family: var(--main-font, "IBM Plex mono", monospace);
   font-size: 1.125rem;
   background-color: var(--bg-color, #fff1f7);
   background-image: var(--bg-image, url(../images/cover-image-light.png));
@@ -27,7 +27,7 @@
   line-height: 82.5%;
   color: var(--accent-header-color, #ffc2e6);
   text-transform: lowercase;
-  text-shadow: 4px 4px 0 var(--shadow-header-color, #FF0070);
+  text-shadow: 4px 4px 0 var(--shadow-header-color, #ff0070);
   margin-inline-start: -20px;
 }
 
@@ -45,7 +45,6 @@
   align-self: center;
   color: var(--description-text-color, #353030);
 }
-
 
 .header__theme-menu {
   justify-self: center;
@@ -266,7 +265,7 @@
 
 .footer__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 2px 2px 0 var(--shadow-header-color, #FF0070);
+  text-shadow: 2px 2px 0 var(--shadow-header-color, #ff0070);
   line-height: 82.5%;
   color: var(--accent-header-color, #ffc2e6);
   text-transform: lowercase;
@@ -280,7 +279,6 @@
     --block-size: 1024px;
   }
 
-
   .header__theme-menu {
     justify-self: end;
     align-self: center;
@@ -289,8 +287,6 @@
   .header__theme-menu-list {
     flex-direction: column;
   }
-
-  
 
   .section-causes .section__title {
     inline-size: min-content;
@@ -308,8 +304,6 @@
   .section-advices .list .title-decor {
     font-weight: normal;
   }
-
-
 }
 
 @media (width <=767px) {
@@ -322,10 +316,9 @@
     gap: 50px;
   }
 
-    .header__title {
+  .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
-
 
   .header__title {
     margin-inline-start: 0;

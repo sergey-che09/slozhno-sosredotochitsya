@@ -14,8 +14,8 @@
 
   --shadow-header-color: #FF0070;
   --description-text-color: #353030;
-  
-  --main-font: "IBM Plex mono", Arial, sans-serif;
+
+  --main-font: "IBM Plex mono", monospace;
   --distance-element: 20px;
   --block-size: 768px;
 }
