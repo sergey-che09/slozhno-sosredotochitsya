@@ -4,25 +4,38 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  .header__label {
+    display: none;
+  }
+  .page.theme_light {
+    --shadow-header-color: #ff8dcb;
+    --description-text-color: #353430;
+  }
+}
+
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  .page.theme_light {
+    --shadow-header-color: #ff0070;
+    --description-text-color: #353030;
+  }
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #fff1f7;
-  /* --bg-color: #3d252f; */
-  --bg-image: url("../images/cover-image-light.png");
+  --bg-image: url(../images/cover-image-light.png);
   --text-color: #353430;
-  --main-font-color: #353430;
-  --text-decription: #353030;
-  --hover-color: rgba(49, 42, 78, 0.4);
-  --header-font-color: #353030;
-  --title-color: #ffc2e6;
   --accent-color: #ff8dcb;
-  --shadow-color: #ff0070;
-  --border-color: var(--text-color, #353430);
-  --main-font: "IBM Plex mono", Arial, sans-serif;
-  --main-font-size: 1.125rem;
-  --accent-font: "IBM Plex mono", Arial, sans-serif;
-  --accent-font-size: 1.875rem;
+  --accent-title-color: #353430;
+  --accent-text-color: #353430;
+  --accent-header-color: #ffc2e6;
+  --opacity-accent-color: rgb(53, 52, 48, 0.4);
+}
+
+.page.theme_light .header__label {
+  display: none;
 }

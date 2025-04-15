@@ -3,6 +3,24 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --accent-title-color: #ff0070;
+    --accent-text-color: #000028;
+    --accent-header-color: #db00ff;
+    --opacity-accent-color: rgb(255, 0, 112, 0.4);
+    --description-text-color: #000028;
+    --shadow-header-color: #ff0070;
+  }
+
+  .header__label {
+    display: block;
+  }
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -10,20 +28,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #000028;
-  /* --bg-color: #3d252f; */
-  --bg-image: url("../images/cover-image-dark.png");
-  --text-color: #F1B2CE;
-  --main-font-color: #F1B2CE;
-  --text-decription: #000028;
-  --header-font-color: #FF0070;
-  --hover-color: rgba(255, 0, 112, 0.5);
-  --list-header-font-color: #000028;
-  --title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --shadow-color: #FF0070;
-  --border-color: #FF0070;
-  --main-font: "IBM Plex mono", Arial, sans-serif;
-  --main-font-size: 1.125rem;
-  --accent-font: "IBM Plex mono", Arial, sans-serif;
-  --accent-font-size: 1.875rem;
+  --bg-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --accent-title-color: #ff0070;
+  --accent-text-color: #000028;
+  --accent-header-color: #db00ff;
+  --opacity-accent-color: rgb(255, 0, 112, 0.4);
+  --description-text-color: #000028;
+  --shadow-header-color: #ff0070;
+}
+
+.page.theme_dark .header__label {
+  display: block;
 }
